@@ -108,7 +108,7 @@ axes[1].grid(True)
 axes[2].plot(df['MACD'], label='MACD', color='blue', linewidth=0.8)
 axes[2].plot(df['MACD_signal'], label='Signal', color='orange', linewidth=0.8)
 axes[2].bar(df.index, df['MACD_hist'], label='Histogram', color='gray', alpha=0.5)
-axes[2].set_title('MACD (參考指標)')
+axes[2].set_title('MACD (Reference)')#Reference的中文是參考指標
 axes[2].legend()
 axes[2].grid(True)
 
@@ -116,7 +116,7 @@ axes[2].grid(True)
 axes[3].plot(df['RSI'], label='RSI', color='purple', linewidth=0.8)
 axes[3].axhline(y=70, color='red', linestyle='--', linewidth=0.8, label='Overbought (70)')
 axes[3].axhline(y=30, color='green', linestyle='--', linewidth=0.8, label='Oversold (30)')
-axes[3].set_title('RSI (參考指標)')
+axes[3].set_title('RSI (Reference)')#Reference的中文是參考指標
 axes[3].legend()
 axes[3].grid(True)
 
